@@ -1,2 +1,85 @@
-# OpenShelf-Library-Management-System
-OpenShelf is a smart Library Management System built with C# and SQL Server. It features unique AdminID and MemberID tracking, secure login, book and user management, real-time transactions, due date alerts, reports, and a modern Windows Forms UI for efficient library operations.
+# 📚 OpenShelf – Intelligent Library Management System (LMS)
+
+OpenShelf is a **smart, database-driven Library Management System** built using **C# (.NET Framework)** and **Microsoft SQL Server**.  
+It provides an efficient, automated solution for managing books, members, and library operations — designed for **security**, **accuracy**, and **ease of use**.
+
+---
+
+## 🚀 Key Features
+
+✨ **Unique ID System**  
+- **AdminID** – Secure admin login and activity tracking  
+- **MemberID** – Automatic generation for each member  
+- **BookID / LibraryID** – Unique identifiers for books and library branches  
+
+👥 **User & Role Management**  
+- Role-based access for **Admin**, **Librarian**, and **Member**  
+- Admin controls system settings, manages users, and monitors operations  
+- Members can view available books, request issues, and track their transactions  
+
+📚 **Book Management**  
+- Add, update, delete, and search books  
+- Categorize by author, genre, or availability  
+- Real-time availability tracking  
+
+📊 **Transaction Management**  
+- Record **issues, returns, renewals**, and fines  
+- Auto-updates book availability  
+- Maintains a complete audit log  
+
+📅 **Due Date Alerts & Fine Calculation**  
+- Automated overdue detection  
+- Fine calculation and reminders  
+
+🔐 **Secure Authentication System**  
+- Encrypted login system with **AdminID-based authentication**  
+- Role-based permissions and secure password storage  
+
+🧾 **Reports & Analytics**  
+- Generate detailed reports for books, members, and transactions  
+- Export reports for analysis  
+
+⚙️ **System Settings & Control**  
+- Customize settings, credentials, and themes  
+- Admin can safely stop the system using “Exit Application” control  
+
+---
+
+## 🧠 Architecture & Design Patterns
+
+- 🏗️ **Layered Architecture** – Presentation, business logic, and data layers separated  
+- 🧩 **Singleton Pattern** – Centralized database connection instance  
+- 🔄 **Observer Pattern** – Real-time updates for UI components  
+- 🏭 **Factory Pattern** – Dynamic object creation for books and users  
+
+---
+
+## 💻 Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | C# Windows Forms (.NET Framework) |
+| **Backend** | ADO.NET, Stored Procedures, SQL Queries |
+| **Database** | Microsoft SQL Server 2019 |
+| **IDE** | Visual Studio 2022 |
+| **UI Design** | Modern Windows Forms, custom controls, styled components |
+| **Security** | Role-based Access, Data Validation, Exception Handling |
+
+---
+
+## 🧰 Modules Overview
+
+1. **Admin Module** – Full control of system, users, and settings  
+2. **Member Module** – Borrow, track, and manage personal transactions  
+3. **Book Module** – Inventory management with categories and availability  
+4. **Transaction Module** – Issue, return, renewal, and fine processing  
+5. **Reports Module** – Generate and export detailed analytics  
+6. **Settings Module** – Configure system preferences and exit safely  
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/pathumzcode/OpenShelf-Library-Management-System.git
