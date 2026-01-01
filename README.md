@@ -78,8 +78,4 @@ It provides an efficient, automated solution for managing books, members, and li
 
 ---
 
-## 🛠️ Setup Instructions
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/pathumzcode/OpenShelf-Library-Management-System.git
+Linked in Articel Link :
