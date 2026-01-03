@@ -1,7 +1,7 @@
 # 📚 OpenShelf – Library Management System (LMS)
 
 OpenShelf is a **smart, database-driven Library Management System** built using **C# (.NET Framework)** and **Microsoft SQL Server**.  
-It provides an efficient, automated solution for managing books, members, and library operations — designed for **security**, **accuracy**, and **ease of use**.
+It provides an efficient solution for managing books, members, and library operations  designed for **security**, **accuracy**, and **ease of use**.
 
 ---
 
