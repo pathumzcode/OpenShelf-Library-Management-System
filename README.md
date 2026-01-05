@@ -81,4 +81,39 @@ It provides an efficient solution for managing books, members, and library opera
 
 ---
 
-Linked in Articel Link :
+## 🤝 Contributing
+
+Contributions are **welcome and appreciated**! 🎉  
+If you’d like to improve OpenShelf, please follow these steps:
+
+1. Fork the repository  
+2. Create a new branch (`feature/your-feature-name`)  
+3. Commit your changes with clear messages  
+4. Push to your fork  
+5. Open a Pull Request  
+
+Please ensure your code follows best practices and is well-documented.
+
+---
+
+## ⭐ Support the Project
+
+If you find **OpenShelf** helpful or useful, please consider **giving this repository a star ⭐**.  
+Your support motivates us to continue improving the project and adding new features!
+
+---
+
+## 🔗 Links
+- **LinkedIn Article:** _(article link here)_
+
+---
+
+## 👤 Contributors
+- [@pathumzcode](https://github.com/pathumzcode) – Pathum Lakshan Bandara  
+- [@Kavindu1255](https://github.com/Kavindu1255) - Kavindu Sathsara
+- [@Rasindu198](https://github.com/Rasindu198) - Rasindu Gimhan
+
+---
+
+## 📄 License
+This project is open-source and available under the **MIT License**.
