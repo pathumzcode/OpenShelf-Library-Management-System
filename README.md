@@ -112,6 +112,7 @@ Your support motivates us to continue improving the project and adding new featu
 - [@pathumzcode](https://github.com/pathumzcode) – Pathum Lakshan Bandara  
 - [@Kavindu1255](https://github.com/Kavindu1255) - Kavindu Sathsara
 - [@Rasindu198](https://github.com/Rasindu198) - Rasindu Gimhan
+- [@shalinisandesha3-netizen](https://github.com/shalinisandesha3-netizen) - Shalini Sandesha
 
 ---
 
