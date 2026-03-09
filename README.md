@@ -3,83 +3,217 @@
 
 # 📚 OpenShelf – Library Management System (LMS)
 
-OpenShelf is a **smart, database-driven Library Management System** built using **C# (.NET Framework)** and **Microsoft SQL Server**.  
-It provides an efficient solution for managing books, members, and library operations  designed for **security**, **accuracy**, and **ease of use**.
+## Introduction
+
+Managing a library manually can be time-consuming and error-prone, especially when dealing with large numbers of books and members. To solve this problem, I developed a **Library Management System**, a desktop-based application that helps automate and simplify the daily operations of a library.
+
+This system is designed to manage books, members, and borrowing activities efficiently. Instead of maintaining physical records, the application allows librarians to store and manage all data digitally through an easy-to-use interface.
+
+The system provides a structured and organized way to handle library operations such as **adding books, registering members, issuing books, returning books, and viewing information about library resources**.
 
 ---
 
-## 🚀 Key Features
+# 🎯 Objectives of the Project
 
-✨ **Unique ID System**  
-- **AdminID** – Secure admin login and activity tracking  
-- **MemberID** – Automatic generation for each member  
-- **BookID / LibraryID** – Unique identifiers for books and library branches  
+The main objective of this project is to create a **digital library management solution** that improves efficiency and reduces manual work. The system aims to:
 
-👥 **User & Role Management**  
-- Role-based access for **Admin**, **Librarian**, and **Member**  
-- Admin controls system settings, manages users, and monitors operations  
-- Members can view available books, request issues, and track their transactions  
+- Simplify book and member management
+- Maintain accurate records of issued and returned books
+- Provide quick access to library information
+- Reduce paperwork and human errors
+- Improve overall library administration
 
-📚 **Book Management**  
-- Add, update, delete, and search books  
-- Categorize by author, genre, or availability  
-- Real-time availability tracking  
-
-📊 **Transaction Management**  
-- Record **issues, returns, renewals**, and fines  
-- Auto-updates book availability  
-- Maintains a complete audit log  
-
-📅 **Due Date Alerts & Fine Calculation**  
-- Automated overdue detection  
-- Fine calculation and reminders  
-
-🔐 **Secure Authentication System**  
-- Encrypted login system with **AdminID-based authentication**  
-- Role-based permissions and secure password storage  
-
-🧾 **Reports & Analytics**  
-- Generate detailed reports for books, members, and transactions  
-- Export reports for analysis  
-
-⚙️ **System Settings & Control**  
-- Customize settings, credentials, and themes  
-- Admin can safely stop the system using “Exit Application” control  
+This project also helped me gain practical experience in **software development, database management, and user interface design**.
 
 ---
 
-## 🧠 Architecture & Design Patterns
+# 🖥️ System Overview
 
-- 🏗️ **Layered Architecture** – Presentation, business logic, and data layers separated  
-- 🧩 **Singleton Pattern** – Centralized database connection instance  
-- 🔄 **Observer Pattern** – Real-time updates for UI components  
-- 🏭 **Factory Pattern** – Dynamic object creation for books and users  
+The Library Management System is built as a **Windows desktop application** with multiple interactive forms that allow administrators and members to perform different tasks.
 
----
+Each form in the system is designed for a specific function, making the system organized and user-friendly.
 
-## 💻 Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| **Frontend** | C# Windows Forms (.NET Framework) |
-| **Backend** | ADO.NET, Stored Procedures, SQL Queries |
-| **Database** | Microsoft SQL Server 2019 |
-| **IDE** | Visual Studio 2022 |
-| **UI Design** | Modern Windows Forms, custom controls, styled components |
-| **Security** | Role-based Access, Data Validation, Exception Handling |
+The application includes **separate interfaces for administrators and members**, ensuring secure access and proper management of library resources.
 
 ---
 
-## 🧰 Modules Overview
+# 🔐 Admin Management
 
-1. **Admin Module** – Full control of system, users, and settings  
-2. **Member Module** – Borrow, track, and manage personal transactions  
-3. **Book Module** – Inventory management with categories and availability  
-4. **Transaction Module** – Issue, return, renewal, and fine processing  
-5. **Reports Module** – Generate and export detailed analytics  
-6. **Settings Module** – Configure system preferences and exit safely  
+## Admin Login Page
+
+The **Admin Login Page** allows administrators to securely access the system. Only authorized users can log in to manage the library.
+
+## Admin Registration
+
+The system includes an **Admin Registration form**, allowing new administrators to create accounts and gain access to the system.
+
+This ensures that only verified administrators can perform management operations.
 
 ---
+
+# 📚 Book Management
+
+## Add Books
+
+The **Add Books** interface allows administrators to add new books to the library database. Important details such as:
+
+- Book ID
+- Book Title
+- Author Name
+- Category
+- Quantity
+
+can be stored in the system.
+
+Each book is assigned a **unique Book ID** to make identification and tracking easier.
+
+## Remove Books
+
+The **Remove Books** feature allows administrators to delete books from the system when they are no longer available in the library.
+
+## View Book Information
+
+The **View Book Information** interface displays all books stored in the database. This allows administrators to quickly search and view book details.
+
+---
+
+# 👥 Member Management
+
+## Member Registration
+
+The **Member Registration Form** allows new library members to register in the system.
+
+Information such as:
+
+- Member ID
+- Name
+- Contact Details
+- Address
+
+is stored in the database.
+
+Each member receives a **unique Member ID**, which helps track borrowing activities.
+
+## Member Login Page
+
+Members can log in to the system using their credentials to access available library features.
+
+## View Members Information
+
+This interface allows administrators to view the list of registered members and their details.
+
+## Remove Members
+
+If a member is no longer active, administrators can remove their records from the system.
+
+---
+
+# 📖 Book Borrowing System
+
+## Issue Books
+
+The **Issue Books interface** allows administrators to issue books to registered members.
+
+When a book is issued:
+
+- The system records the **Member ID**
+- The **Book ID**
+- The **Issue Date**
+
+This ensures proper tracking of borrowed books.
+
+## Return Books
+
+The **Return Books interface** allows administrators to process returned books.
+
+When a book is returned:
+
+- The system updates the database
+- The book becomes available again for other members
+
+This helps maintain accurate library records.
+
+---
+
+# 📊 Dashboard
+
+The **Dashboard** serves as the central control panel of the system.
+
+From the dashboard, administrators can quickly navigate to:
+
+- Book Management
+- Member Management
+- Issue Books
+- Return Books
+- View Information
+
+The dashboard makes the system easy to use and improves navigation efficiency.
+
+---
+
+# ⚙️ System Settings
+
+The **Settings interface** allows administrators to configure system-related options and manage application preferences.
+
+This ensures the system can be customized based on library requirements.
+
+---
+
+# 🧰 Technologies Used
+
+The Library Management System was developed using the following technologies:
+
+## C#
+
+C# is the main programming language used to implement the application logic and handle system operations.
+
+## .NET Windows Forms
+
+Windows Forms was used to design the **graphical user interface (GUI)**, allowing users to interact with the system easily.
+
+## MySQL
+
+MySQL is used as the **database management system** to store all data related to books, members, and borrowing records.
+
+## Visual Studio
+
+Visual Studio was used as the **development environment** to design interfaces, write code, and manage the project.
+
+---
+
+# 💡 Key Features of the System
+
+✔ Secure Admin Login and Registration  
+✔ Book Management (Add / Remove / View Books)  
+✔ Member Management (Register / Remove / View Members)  
+✔ Book Issuing System  
+✔ Book Return Management  
+✔ Unique Book ID and Member ID system  
+✔ User-friendly Windows Forms interface  
+✔ Organized database management  
+
+---
+
+# 📈 Skills Demonstrated
+
+Through this project, I developed and improved my skills in:
+
+- Desktop Application Development
+- Object-Oriented Programming (OOP)
+- Database Design
+- MySQL Integration
+- User Interface Design
+- Software Testing and Debugging
+
+---
+
+# 🚀 Conclusion
+
+The **Library Management System** successfully demonstrates how technology can improve traditional library operations by introducing a digital system that is efficient, organized, and easy to use.
+
+This project helped me gain practical experience in building **real-world software solutions**, managing databases, and designing user-friendly interfaces.
+
+The system can be further enhanced by adding features such as **barcode scanning, online book reservations, and reporting dashboards**.
 
 ## 🤝 Contributing
 
